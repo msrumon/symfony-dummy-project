@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	New Blog
+{% endblock %}
+
+{% block body %}
+	<header>
+		Create New Blog
+	</header>
+	{{ form(blogForm) }}
+    <footer>
+        &copy;
+        {{ 'now'|date('Y') }}
+        Rumon
+    </footer>
+{% endblock %}
